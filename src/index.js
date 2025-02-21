@@ -12,6 +12,8 @@ app.use((error, request, response) => {
     return response.status(500).json({ error: 'Internal server error' })
   }
 })
+
+console.log('Server running on port 3000');
 app.listen(3000, () => {
   console.log('Server running on port 3000');
 })
